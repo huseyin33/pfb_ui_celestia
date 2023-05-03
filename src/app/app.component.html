@@ -1,0 +1,44 @@
+<!-- Your content goes here -->
+<div class="center full-height ">
+
+  <div class="column">
+    <h1 class="title">CELESTIA</h1>
+    <div class="input-container">
+      <input [(ngModel)]="ipAddress" (click)="containerClicked = !containerClicked" [class.clicked]="containerClicked"
+             placeholder="Enter Your Ip Address">
+    </div>
+    <div class="row">
+      <div class="input-container">
+        <p>Gas Limit</p>
+        <input class="inputs" [(ngModel)]="gasLimit" placeholder="Gas Limit">
+      </div>
+      <div class="input-container">
+        <p>Fee</p>
+        <input class="inputs" [(ngModel)]="fee" placeholder="Fee">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-container">
+        <p>Name Space Id: </p>
+        <input class="inputs" [(ngModel)]="nameSpaceId" placeholder="namespace_id">
+      </div>
+      <div class="input-container">
+        <p>Data: </p>
+        <input class="inputs" [(ngModel)]="data" placeholder="data">
+      </div>
+    </div>
+    <div style="align-content:center ; justify-content: center ;">
+      <p style="color: white ; font-weight: bold ; font-size: larger">If you wanna generate namespace_id and data click the generate button</p>
+      <button class="rainbow-button" (click)="generateNameAndData()">Generate</button>
+    </div>
+    <button class="rainbow-button" (click)="sendPFB()">Send PFB</button>
+
+    <div>
+      <a *ngIf="downloadLink" [href]="downloadLink" download="response.txt">Click here to download</a>
+
+    </div>
+
+  </div>
+
+</div>
+

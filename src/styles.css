@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+body {
+  background-image: linear-gradient(135deg, #3c3b3f 0%, #605c3c 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

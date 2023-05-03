@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.column {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .column {
+    flex-basis: 100%;
+  }
+}
+
+
+.full-height {
+  height: 100vh;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: border-color 0.3s;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.inputs{
+  color: white;
+  font-weight: bold;
+}
+.input-container:hover {
+  border-color: #999;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  flex-grow: 1;
+}
+
+.input-container input::placeholder {
+  color: #999;
+}
+
+.input-container.clicked {
+  background-color: #ff6666;
+}
+
+.input-container input:focus {
+  color: #333;
+}
+
+.input-container input:focus + .input-icon {
+  color: #333;
+}
+
+.input-icon {
+  font-size: 18px;
+  color: #999;
+  margin-left: 8px;
+}
+
+
+.rainbow-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.5s;
+  margin-top: 20px
+}
+
+/* Crypto-themed background */
+
+
+/* Styling for the title "CELESTIA" */
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.rainbow-button:hover {
+  animation: rainbow 2s infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #ff0000;
+  }
+  14% {
+    background-color: #ff7f00;
+  }
+  28% {
+    background-color: #ffff00;
+  }
+  42% {
+    background-color: #00ff00;
+  }
+  57% {
+    background-color: #0000ff;
+  }
+  71% {
+    background-color: #4b0082;
+  }
+  85% {
+    background-color: #8f00ff;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
