@@ -28,4 +28,6 @@ https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgc
 
 Sending a signed transaction through the Keplr wallet using PFB is currently not possible. With upcoming improvements, the Keplr wallet may be integrated with a PFB submission interface, making it much easier to submit transactions. 
 
+http://celestia-pfb-bloom.com/
+
 # Keep an eye out for further updates.
