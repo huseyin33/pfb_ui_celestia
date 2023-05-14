@@ -1,6 +1,13 @@
 # pfb_ui_celestia
 a user interface for pay for blob transaction for celestia by using Angular 
 
+# Run Online
+http://celestia-pfb-bloom.com/
+
+# Requirement For Online Test
+
+https://github.com/huseyin33/tool_requirement_celestia  follow the steps. Otherwise it will not work.
+
 # Before you begin, ensure you have met the following requirements:
 
 * You have installed the latest version of [Node.js](https://nodejs.org/).
