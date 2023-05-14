@@ -1,5 +1,5 @@
 # pfb_ui_celestia
-a user interface for pay for blob transaction for celestia by using Angular 
+A user interface for pay for blob transaction for Celestia by using Angular 
 
 # Run Online
 http://celestia-pfb-bloom.com/
@@ -26,12 +26,11 @@ As you make changes to your application code, the development server will automa
 
 ## A video demonstrating how to generate PFB and send a transaction.
 
-https://github.com/huseyin33/pfb_ui_celestia/assets/72567591/fc1c583d-aba3-4637-8060-9fb42bbee2b8
+
+https://github.com/huseyin33/pfb_ui_celestia/assets/72567591/e64c8c73-6e70-4655-9bb5-35f6cb4476d0
+
 
 # NOTE
-
-Please make sure you allow the cors on your browser
-https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
 
 Sending a signed transaction through the Keplr wallet using PFB is currently not possible. With upcoming improvements, the Keplr wallet may be integrated with a PFB submission interface, making it much easier to submit transactions. 
 
