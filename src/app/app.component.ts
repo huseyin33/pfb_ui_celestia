@@ -50,24 +50,24 @@ export class AppComponent {
     const url = URL.createObjectURL(blob);
     this.downloadLink = url;
   }
-
-  async sendPFB(): Promise<void> {
-    const url = `http://${this.ipAddress}:26659/submit_pfb`;
+    
+ async sendPFB(): Promise<void> {
+    const url = `http://${this.ipAddress}:8080/pfb`;
     const data = {
       namespace_id: this.nameSpaceId,
       data: this.data,
       gas_limit: this.gasLimit,
       fee: this.fee,
+      ip_address: this.ipAddress,
     };
     try {
-      const response = await this.http.post(url, JSON.stringify(data), { responseType: 'text'}).toPromise();
+      const response = await this.http.post(url, JSON.stringify(data), {responseType: 'text'}).toPromise();
       this.downloadResponseAsTextFile(response)
+      alert("Successful")
     } catch (error) {
       console.error('Error:', error);
-      alert('Response:'+ error);
-
+      alert('Pfb has not gone trough make sure you have enough tia' + error);
     }
   }
-
 
 }
