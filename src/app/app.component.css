@@ -141,3 +141,30 @@
     background-color: #ff0000;
   }
 }
+
+.note-container {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #f1c40f;
+  background-color: #fdfd96;
+  border-radius: 5px;
+  color: #7f8c8d;
+}
+
+.note-container h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.note-container p {
+  margin: 0 0 10px;
+}
+
+.note-container a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.note-container a:hover {
+  text-decoration: underline;
+}
