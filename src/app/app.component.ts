@@ -14,6 +14,8 @@ export class AppComponent {
   nameSpaceId: string = '';
   data: string = '';
   downloadLink: string | undefined;
+  isLoading: boolean = false;
+
 
   constructor(private http: HttpClient) {
   }
@@ -52,6 +54,8 @@ export class AppComponent {
   }
     
  async sendPFB(): Promise<void> {
+        this.isLoading=true;
+
     const url = `http://${this.ipAddress}:8080/pfb`;
     const data = {
       namespace_id: this.nameSpaceId,
@@ -64,9 +68,13 @@ export class AppComponent {
       const response = await this.http.post(url, JSON.stringify(data), {responseType: 'text'}).toPromise();
       this.downloadResponseAsTextFile(response)
       alert("Successful")
+          this.isLoading=false;
+
     } catch (error) {
       console.error('Error:', error);
       alert('Pfb has not gone trough make sure you have enough tia' + error);
+          this.isLoading=false;
+
     }
   }
 
