@@ -33,10 +33,13 @@
     </div>
     <button class="rainbow-button" (click)="sendPFB()">Send PFB</button>
 
-    <div>
-      <a *ngIf="downloadLink" [href]="downloadLink" download="response.txt">Click here to download</a>
+       <div *ngIf="isLoading" class="overlay">
+      <div class="spinner">
+        <a *ngIf="downloadLink" [href]="downloadLink" download="response.txt">Click here to download</a>
 
+      </div>
     </div>
+
     <div class="note-container">
     <h2>NOTE!!</h2>
     <a style="font-size: 20px" href="https://github.com/huseyin33/pfb_ui_celestia" target="_blank">PFB </a>
